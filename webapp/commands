@@ -1,0 +1,15 @@
+Run app
+-------
+mvn clean spring-boot:run
+mvn spring-boot:run
+
+
+Dadabae
+-------
+
+1. Backup
+cat backup.sql | docker exec c-mysql /usr/bin/mysqldump -u root --password=12345678 test
+
+2. Restore
+cat backup.sql | docker exec -i c-mysql /usr/bin/mysql -u root --password=12345678 test
+
